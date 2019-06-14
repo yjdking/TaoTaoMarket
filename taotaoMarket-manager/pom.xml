@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>TaoTaoMarket</artifactId>
+        <groupId>yjd</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>taotaoMarket-manager</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>taotaoMarket-manager-dao</module>
+        <module>taotaoMarket-manager-pojo</module>
+        <module>taotaoMarket-manager-interface</module>
+        <module>Taotao-manager-service</module>
+    </modules>
+
+    <!--taotaoMarket-common为TaoTaoMarket的工具类通用的jar包，
+    taotaoMarket-manager必须显示的依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>yjd</groupId>
+            <artifactId>taotaoMarket-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>

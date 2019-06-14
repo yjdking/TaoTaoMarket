@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Taotaomanagerservice" />
+        <module name="taotaoMarketcommon" />
+        <module name="taotaoMarketmanagerdao" />
+        <module name="taotaoMarketmanagerinterface" />
+        <module name="taotaoMarketmanagerpojo" />
+        <module name="TaoTaoMarketweb" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aatest" target="1.7" />
+      <module name="ManagerTest" target="1.7" />
+      <module name="noa" target="1.7" />
+      <module name="quickStartTest" target="1.7" />
+      <module name="te" target="1.7" />
+      <module name="test" target="1.7" />
+      <module name="test1" target="1.7" />
+      <module name="test11" target="1.7" />
+      <module name="test111" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
