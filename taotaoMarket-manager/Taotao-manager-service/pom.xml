@@ -12,9 +12,9 @@
     <artifactId>Taotao-manager-service</artifactId>
     <packaging>war</packaging>
 
-    <!--<name>Taotao-manager-service Maven Webapp</name>
-    &lt;!&ndash; FIXME change it to the project's website &ndash;&gt;
-    <url>http://www.example.com</url>-->
+    <name>Taotao-manager-service Maven Webapp</name>
+
+    <!--<url>http://www.example.com</url>-->
 
     <!--<properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,6 +23,11 @@
     </properties>-->
 
     <dependencies>
+        <!--<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>-->
+
         <!--<dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

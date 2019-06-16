@@ -11,9 +11,9 @@
 
     <artifactId>taotaoMarket-manager-interface</artifactId>
 
-    <!--<name>taotaoMarket-manager-interface</name>
-    &lt;!&ndash; FIXME change it to the project's website &ndash;&gt;
-    <url>http://www.example.com</url>-->
+    <name>taotaoMarket-manager-interface</name>
+
+    <url>http://www.example.com</url>
 
  <!--   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

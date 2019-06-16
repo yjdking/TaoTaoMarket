@@ -29,4 +29,22 @@
         </dependency>
     </dependencies>
 
+    <!--为了运行聚合工程（taotaoMarket-manager）需要配置tomcat插件-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+
+                <!--configuration标签的作用在这里是定义启动路径-->
+                <!--http://localhost:8081/TaoTaoMarket-web/-->
+                <configuration>
+                    <path>/TaoTaoMarket-manager</path>
+                    <!--这里配置端口，不配置的话默认8080-->
+                    <port>8081</port>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

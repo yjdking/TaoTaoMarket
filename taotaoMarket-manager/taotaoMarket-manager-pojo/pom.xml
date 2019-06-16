@@ -10,24 +10,23 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>taotaoMarket-manager-pojo</artifactId>
-<!--
     <name>taotaoMarket-manager-pojo</name>
-    &lt;!&ndash; FIXME change it to the project's website &ndash;&gt;
-    <url>http://www.example.com</url>-->
 
-    <properties>
+    <!--<url>http://www.example.com</url>-->
+
+   <!-- <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
-    </properties>
+    </properties>-->
 
     <dependencies>
-        <dependency>
+        <!--<dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
