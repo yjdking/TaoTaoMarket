@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry  location="C:\Users\admin\Desktop\java\工程\yjd_淘淘商城_所需要的资料\jar\mysql-connector-java-5.1.32.jar"/>
+    <context id="testTables" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <!--&lt;!&ndash; JavaBean 实现 序列化 接口 &ndash;&gt;
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin">
+        </plugin>
+        &lt;!&ndash; genenat entity时,生成toString &ndash;&gt;
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+        &lt;!&ndash; 自定义物理分页  可生成支持Mysql数据的limit  不支持Oracle &ndash;&gt;
+        <plugin type="org.mybatis.generator.plugins.page.PaginationPlugin" />
+        &lt;!&ndash; 自定义查询指定字段  &ndash;&gt;
+        <plugin type="org.mybatis.generator.plugins.field.FieldsPlugin" />
+        &lt;!&ndash; 开启支持内存分页   可生成 支持内存分布的方法及参数
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin" />
+        &ndash;&gt;
+        &lt;!&ndash; generate entity时，生成hashcode和equals方法
+		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+		 &ndash;&gt;
+        &lt;!&ndash; 此处是将Example改名为Criteria 当然 想改成什么都行~    &ndash;&gt;
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString" value="Example$" />
+            &lt;!&ndash; 替换后
+            <property name="replaceString" value="Criteria" />
+             &ndash;&gt;
+            <property name="replaceString" value="Query" />
+        </plugin>-->
+
+
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!--防止生成的代码中有很多注释，加入下面的配置控制-->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+
+        <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+        <jdbcConnection
+                driverClass="com.mysql.jdbc.Driver"
+                connectionURL="jdbc:mysql://localhost:3306/taotao"
+                userId="root"
+                password="root">
+        </jdbcConnection>
+
+        <!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和
+            NUMERIC 类型解析为java.math.BigDecimal -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- targetProject:生成PO类的位置 -->
+        <javaModelGenerator targetPackage="com.taotao.pojo" targetProject="src/main/java">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="true" />
+            <!-- 从数据库返回的值被清理前后的空格 -->
+            <property name="trimStrings" value="true" />
+
+            <!-- 建立的pojo对象是否不可改变,即生成的pojo对象不会有setter方法，只有构造方法
+            <property name="immutable" value="false"/>
+            &lt;!&ndash; 是否对类CHAR类型的列的数据进行trim操作 &ndash;&gt;
+            <property name="trimStrings" value="true" />-->
+        </javaModelGenerator>
+
+        <!-- targetProject:mapper映射文件生成的位置 -->
+        <sqlMapGenerator targetPackage="com.taotao.dao" targetProject="src/main/java">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- targetPackage：mapper接口生成的位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.taotao.dao"
+                             targetProject="src/main/java">
+            <!-- enableSubPackages:是否让schema作为包的后缀 -->
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!-- 指定数据库表 -->
+        <table tableName="%">
+
+        </table>
+
+        <!-- 此处是将UserMapper.xml改名为UserDao.xml 当然 想改成什么都行~ -->
+        <!--<plugin type="org.mybatis.generator.plugins.rename.RenameSqlMapperPlugin">
+            <property name="searchString" value="Mapper" />
+            <property name="replaceString" value="Dao" />
+        </plugin>-->
+
+        <!-- 此处是将UserMapper改名为UserDao 接口 当然 想改成什么都行~  -->
+        <!--<plugin type="org.mybatis.generator.plugins.rename.RenameJavaMapperPlugin">
+            <property name="searchString" value="Mapper$" />
+            <property name="replaceString" value="Dao" />
+        </plugin>-->
+    </context>
+</generatorConfiguration>
