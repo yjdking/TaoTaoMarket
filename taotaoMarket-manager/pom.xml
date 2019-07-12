@@ -17,7 +17,6 @@
         <module>taotaoMarket-manager-pojo</module>
         <module>taotaoMarket-manager-interface</module>
         <module>Taotao-manager-service</module>
-        <module>test</module>
     </modules>
 
     <!--taotaoMarket-common为TaoTaoMarket的工具类通用的jar包，
@@ -47,5 +46,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

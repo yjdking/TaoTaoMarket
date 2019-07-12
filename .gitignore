@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+#.gitignore
+*.iml
+
+TaoTaoMarket-web/target/
+generatorSqlmap/
+taotaoMarket-common/target/
+taotaoMarket-manager/Taotao-manager-service/target/
+testGitignore/
