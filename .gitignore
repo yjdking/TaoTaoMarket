@@ -3,8 +3,13 @@
 #.gitignore
 *.iml
 
-TaoTaoMarket-web/target/
 generatorSqlmap/
-taotaoMarket-common/target/
-taotaoMarket-manager/Taotao-manager-service/target/
-testGitignore/
+test/
+target/
+
+# TaoTaoMarket-web/target/
+# taotaoMarket-common/target/
+# taotaoMarket-manager/Taotao-manager-service/target/
+
+
+
