@@ -35,62 +35,25 @@
         <dependency>
             <groupId>yjd</groupId>
             <artifactId>taotaoMarket-common</artifactId>
-             <version>1.0-SNAPSHOT</version>
-         </dependency>
-
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>yjd</groupId>
+            <artifactId>taotaoMarket-manager-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
         </dependency>
 
-       <!-- <dependency>
-            <groupId>com.taotao</groupId>
-            <artifactId>taotao-manager-interface</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        &lt;!&ndash; Spring &ndash;&gt;
+        <!-- Jackson Json处理工具包 返回值为responseBody需要 -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aspects</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jms</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-        </dependency>
-        &lt;!&ndash; JSP相关 &ndash;&gt;
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jsp-api</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        &lt;!&ndash; dubbo &ndash;&gt;
+        <!--dubbo相关的jar包-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
@@ -113,23 +76,69 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+        <!-- <dependency>
+             <groupId>com.taotao</groupId>
+             <artifactId>taotao-manager-interface</artifactId>
+             <version>0.0.1-SNAPSHOT</version>
+         </dependency>
+         &lt;!&ndash; Spring &ndash;&gt;
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-context</artifactId>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-beans</artifactId>
+         </dependency>
 
-        &lt;!&ndash; 添加Fast客户端引用 &ndash;&gt;
-        <dependency>
-            <groupId>fastdfs_client</groupId>
-            <artifactId>fastdfs_client</artifactId>
-            <version>1.25</version>
-        </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-jdbc</artifactId>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-aspects</artifactId>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-jms</artifactId>
+         </dependency>
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-context-support</artifactId>
+         </dependency>
+         &lt;!&ndash; JSP相关 &ndash;&gt;
+         <dependency>
+             <groupId>jstl</groupId>
+             <artifactId>jstl</artifactId>
+         </dependency>
+         <dependency>
+             <groupId>javax.servlet</groupId>
+             <artifactId>servlet-api</artifactId>
+             <scope>provided</scope>
+         </dependency>
+         <dependency>
+             <groupId>javax.servlet</groupId>
+             <artifactId>jsp-api</artifactId>
+             <scope>provided</scope>
+         </dependency>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
+         &lt;!&ndash; 添加Fast客户端引用 &ndash;&gt;
+         <dependency>
+             <groupId>fastdfs_client</groupId>
+             <artifactId>fastdfs_client</artifactId>
+             <version>1.25</version>
+         </dependency>
 
-        <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
-        </dependency>-->
+         <dependency>
+             <groupId>junit</groupId>
+             <artifactId>junit</artifactId>
+         </dependency>
+
+         <dependency>
+             <groupId>commons-fileupload</groupId>
+             <artifactId>commons-fileupload</artifactId>
+         </dependency>-->
 
     </dependencies>
 
